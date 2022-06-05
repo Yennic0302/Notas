@@ -1,0 +1,229 @@
+:root{
+    --backgroud-color: #111;
+    --box-backgroud-color: #333;
+    --text-color-priamry:#7722ff;
+    --text-color: #fff;
+}
+
+
+
+body{
+    background-color: var(--backgroud-color);
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+
+.nav-container{
+    background-color: var(--box-backgroud-color);
+}
+
+.nav-container p{
+    margin: 0px;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.nav-container p span{
+    color: var(--text-color-priamry);
+}
+
+.notes-container{
+    display: flex;
+}
+
+.notes-create{
+    flex: 2;
+    margin-right: 5px;
+    height: 90vh;
+    overflow: auto;
+    width: 100%;
+}
+
+.notes-create-options{
+    position: fixed;
+    transform: translateX(-500px) translateY(550px);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: var(--box-backgroud-color);
+    padding: 5px;
+    border-radius: 20px;
+    right: 0;
+    align-items: center;
+}
+
+.add-note{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.add-note:hover{
+    color: var(--text-color-priamry);
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #111;
+}
+
+
+
+.notes-radys{
+    background-color: var(--backgroud-color);
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    gap: 10px;
+    height: 100%;
+}
+
+.note-grid{
+    background-color: var(--box-backgroud-color);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.example-note{
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 20px;
+    height: 300px;
+    width: 200px;
+}
+
+.example-note h3{
+    margin: 5px;
+}
+
+.title-note{
+    color: var(--text-color-priamry);
+}
+
+.notes-reads{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+
+.read-title-note{
+    visibility: hidden;
+    margin: 0px;
+    padding: 10px;
+    height: 5vh;
+    color: var(--text-color-priamry);
+    font-size: 25px;
+    background-color: var(--box-backgroud-color);
+    word-wrap: break-word;
+
+}
+
+.read-content-note{
+    visibility: hidden;
+    padding: 20px;
+    font-size: 20px;
+    width: 400px;
+    height: 75vh;
+    color: var(--text-color);
+    word-wrap: break-word;
+    background: transparent;
+    overflow: auto;
+}
+
+.options-edits{
+    display: flex;
+    visibility: hidden;
+    border-top: 1px solid var(--backgroud-color);
+    border-bottom: 1px solid var(--backgroud-color);
+    background-color: var(--box-backgroud-color);
+    justify-content: end;
+    padding: 5px;
+}
+
+.one-note-fond{
+    color: var(--text-color);
+    font-weight: 100;
+    text-align: center;
+    font-size: 130px;
+}
+.one-note-fond span{
+    color: var(--text-color-priamry);
+}
+
+.disabled{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #aaa;
+    font-size: 13px;
+    padding: 5px;
+    padding: 3px 10px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid #888;
+    border-radius: 20px;
+}
+
+.enable{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    padding: 3px 10px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.enable:hover{
+    border: 2px solid var(--text-color-priamry);
+    color: var(--text-color-priamry);
+    cursor: pointer;
+}
+.delete-2{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #aaa;
+    font-size: 13px;
+    padding: 5px;
+    padding: 3px 10px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid #888;
+    border-radius: 20px;
+}
+.delete{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    font-size: 13px;
+    padding: 5px;
+    padding: 3px 10px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.delete:hover{
+    border: 2px solid var(--text-color-priamry);
+    color: var(--text-color-priamry);
+    cursor: pointer;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./creating-note-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container-crating-note">
+        <div class="creating-note" >
+            <div class="creating-notes-options">
+                <button id="save">save</button>
+                <button id="close">X</button>
+            </div>
+            <input  type="text" id='title' placeholder="Titulo...">
+            <textarea name="" id="content" cols="40" rows="20"></textarea>
+        </div>
+    </section>
+
+
+
+
+    <nav class="nav-container">
+        <p><span>O</span>ne<span>N</span>ote</p>
+    </nav>
+
+    <section  class="notes-container">
+        <div class="notes-create">
+            <div class="notes-create-options">
+                <button class="add-note">+</button>
+            </div>
+            <div class="notes-radys"></div>
+        </div>
+        <div class="notes-reads">
+            <div class="options-edits">
+                <button class="disabled">Guardar</button>
+                <button class="delete-2">Eliminar</button>
+            </div>
+            <h3 class="read-title-note"></h3>
+            <h1 class="one-note-fond"><span>O</span>ne <br> <span>N</span>ote</h1>
+            <p class="read-content-note"></p>
+        </div>
+    </section>
+    <script src="./create-note.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
